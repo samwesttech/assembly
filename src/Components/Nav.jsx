@@ -4,15 +4,11 @@ import { NavStyled } from "../styles";
 const Nav = () => {
   return (
     <NavStyled>
-      <a href="#Home" class="underline">
-        Home
-      </a>
-      <a href="#Luxurys" class="underline">
-        Luxuries
-      </a>
-      <a class="underline">FloorPlan</a>
-      <a class="underline">Local Area</a>
-      <a class="underline">Contact</a>
+      <h1 class="underline">Home</h1>
+      <h1 class="underline">Luxuries</h1>
+      <h1 class="underline">FloorPlan</h1>
+      <h1 class="underline">Local Area</h1>
+      <h1 class="underline">Contact</h1>
     </NavStyled>
   );
 };

@@ -18,3 +18,20 @@ h6 {
 p {
   font-family: "Roboto", sans-serif;
 }
+
+.bedroom {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+.bedroom-text {
+  width: 50%;
+  margin: auto 5%;
+  margin-top: 2%;
+}
+
+.bedroom-carousel {
+  width: 50%;
+  height: 40vw;
+  margin: auto 5%;
+}

@@ -5,7 +5,7 @@ import { HeaderLogo } from "./styles";
 import IntroMessage from "./Components/IntroMessage";
 import Bedroom from "./Components/Bedroom";
 import FloorPlan from "./Components/FloorPlan";
-import Luxurys from "./Components/Luxurys";
+import Luxuries from "./Components/Luxuries";
 import LocalArea from "./Components/LocalArea";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
@@ -19,7 +19,7 @@ function App() {
       </div>
       <IntroMessage id="Home" />
       <Bedroom />
-      <Luxurys id="Luxurys" />
+      <Luxuries id="Luxuries" />
       <FloorPlan id="FloorPlan" />
       <LocalArea id="LocalArea" />
       <Contact id="Contact" />

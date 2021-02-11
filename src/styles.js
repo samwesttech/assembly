@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const NavStyled = styled.div`
-  font-size: 2vw;
+  font-size: 1.5vw;
   display: flex;
   flex-direction: row;
   margin: auto;
   color: white;
   background-color: black;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
 
-  a {
-    margin: auto;
-    padding: 1%;
+  h1 {
+    margin: 2% auto;
   }
 
   .underline {
+    z-index: 1100;
     background: none;
     color: white;
     position: relative;
@@ -41,6 +45,7 @@ export const NavStyled = styled.div`
 
 export const HeaderLogo = styled.img`
   width: auto;
+  margin-top: 5%;
   height: 30vw;
   overflow: hidden;
   object-fit: cover;
@@ -62,13 +67,14 @@ export const BedroomStyled = styled.img`
   object-fit: cover;
 `;
 
-export const LuxurysStyled = styled.div`
+export const LuxuriesStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to right, #c9ac56, white);
+  background-color: #ffde7b;
 
   h1 {
     width: 100%;
+    font-size: 5vw;
   }
 
   p {
@@ -79,13 +85,17 @@ export const LuxurysStyled = styled.div`
 
   .Luxarys {
     font-size: 1vw;
-
     display: flex;
     flex-direction: row;
+    margin: auto;
   }
   .Luxary {
-    width: 50%;
-    margin: 1%;
+    width: 40%;
+    margin: 5%;
+    margin-top: 0;
+    background-color: white;
+    border-radius: 1%;
+    border: grey solid 3px;
   }
 `;
 
@@ -110,6 +120,26 @@ export const FooterImageStyled = styled.img`
   height: 25vw;
   width: auto;
   margin: auto;
+`;
+
+export const LocalAreaStyled = styled.div`
+  background-image: linear-gradient(to right, #c9ac56, white, #c9ac56);
+
+  .img-container {
+    height: 40vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+  }
+
+  img {
+    margin: auto;
+    width: auto;
+    height: 25vw;
+    padding: 2%;
+  }
 `;
 
 export const FooterStyled = styled.div`
@@ -146,27 +176,39 @@ export const FooterStyled = styled.div`
 `;
 
 export const ContactForm = styled.form`
-  /* Style inputs with type="text", select elements and textareas */
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 50%;
+  margin: 5% auto;
+  border: solid grey 3px;
+  border-radius: 1%;
+  height: auto;
+  font-size: 2vw;
+
+  .input-field {
+    display: flex;
+    /* justify-content: center; */
+    margin: 8% auto;
+    width: 90%;
+    text-align: left;
+
+    label {
+      width: 20%;
+    }
+
+    input,
+    textarea {
+      width: 80%;
+    }
   }
 
   /* Style the submit button with a specific background color etc */
   input[type="submit"] {
     background-color: #4caf50;
     color: white;
-    padding: 12px 20px;
+    padding: 2% 5%;
     border: none;
-    border-radius: 4px;
+    border-radius: 1%;
+    margin: 5%;
+    margin-top: 0%;
     cursor: pointer;
   }
 
