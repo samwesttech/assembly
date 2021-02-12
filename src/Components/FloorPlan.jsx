@@ -4,7 +4,7 @@ import { FloorPlanStyled } from "../styles";
 
 const FloorPlan = () => {
   return (
-    <div>
+    <div id="FloorPlan">
       <h1 style={{ marginBottom: "0" }}>Floor Plan</h1>
       <FloorPlanStyled>
         <img src={FloorPlanImage} alt="Floor plan of accomodation" />

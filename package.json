@@ -12,6 +12,7 @@
     "react-image-gallery": "^1.0.8",
     "react-responsive-carousel": "^3.2.11",
     "react-scripts": "4.0.2",
+    "react-smooth-scrolling": "^1.0.2",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.0"
   },

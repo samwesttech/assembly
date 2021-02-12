@@ -5,7 +5,7 @@ import HotTubImage from "../Assets/Assembly_Hot_Tub_Night.jpg";
 
 const Luxuries = () => {
   return (
-    <LuxuriesStyled>
+    <LuxuriesStyled id="Luxuries">
       <h1>Luxurys</h1>
       <div className="Luxarys">
         <div className="Luxary">
@@ -15,10 +15,7 @@ const Luxuries = () => {
             ground floor comfortable space for dining, relaxing and getting
             together for the duration of your stay.{" "}
           </p>
-          <img
-            src={DiningImage}
-            style={{ width: "auto", height: "25vw", borderRadius: "1%" }}
-          />
+          <img src={DiningImage} />
         </div>
         <div className="Luxary">
           <h2>Hot Tub</h2>
@@ -26,10 +23,7 @@ const Luxuries = () => {
             Add the benefit of an outdoor hot-tub area, a fully stocked bar and
             optional private chef.
           </p>
-          <img
-            src={HotTubImage}
-            style={{ width: "auto", height: "25vw", borderRadius: "1%" }}
-          />
+          <img src={HotTubImage} />
         </div>
       </div>
     </LuxuriesStyled>

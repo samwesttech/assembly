@@ -17,12 +17,12 @@ function App() {
       <div style={{ backgroundColor: "black" }}>
         <HeaderLogo src={Logo} alt="Assembly Logo" />
       </div>
-      <IntroMessage id="Home" />
+      <IntroMessage />
       <Bedroom />
-      <Luxuries id="Luxuries" />
-      <FloorPlan id="FloorPlan" />
-      <LocalArea id="LocalArea" />
-      <Contact id="Contact" />
+      <Luxuries />
+      <FloorPlan />
+      <LocalArea />
+      <Contact />
       <Footer />
     </div>
   );

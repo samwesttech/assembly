@@ -3,7 +3,7 @@ import { ContactForm } from "../styles";
 
 const Contact = () => {
   return (
-    <ContactForm action="action_page.php">
+    <ContactForm action="action_page.php" id="Contact">
       <h1>Contact Us</h1>
       <div className="input-field">
         <label for="name">Name</label>

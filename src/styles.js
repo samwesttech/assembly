@@ -12,7 +12,7 @@ export const NavStyled = styled.div`
   width: 100%; /* Full width */
   z-index: 1000;
 
-  h1 {
+  a {
     margin: 2% auto;
   }
 
@@ -52,12 +52,12 @@ export const HeaderLogo = styled.img`
 `;
 
 export const IntroMessageStyled = styled.div`
-  width: 50%;
-  height: 30vw;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 3vw;
 `;
 
 export const BedroomStyled = styled.img`
@@ -70,7 +70,7 @@ export const BedroomStyled = styled.img`
 export const LuxuriesStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #ffde7b;
+  background-color: #fce76f;
 
   h1 {
     width: 100%;
@@ -78,24 +78,33 @@ export const LuxuriesStyled = styled.div`
   }
 
   p {
-    width: 50%;
-    height: 10%;
+    width: 70%;
+    height: auto;
     margin: 5% auto;
   }
 
   .Luxarys {
-    font-size: 1vw;
+    font-size: 1.25vw;
     display: flex;
     flex-direction: row;
     margin: auto;
   }
   .Luxary {
     width: 40%;
+    height: auto;
     margin: 5%;
     margin-top: 0;
     background-color: white;
-    border-radius: 1%;
-    border: grey solid 3px;
+    border-radius: 2%;
+    border: black solid 2px;
+
+    img {
+      border: black solid 2px;
+      border-radius: 2%;
+      width: 50%;
+      height: auto;
+      margin: 5%;
+    }
   }
 `;
 
@@ -123,22 +132,39 @@ export const FooterImageStyled = styled.img`
 `;
 
 export const LocalAreaStyled = styled.div`
-  background-image: linear-gradient(to right, #c9ac56, white, #c9ac56);
+  background-color: #fce76f;
+  margin: auto;
+  padding: 5%;
+  padding-top: 1%;
+
+  .text-container {
+    width: 50%;
+    margin: auto;
+    font-size: 1.5vw;
+    padding-bottom: 2%;
+
+    h1 {
+      font-size: 4vw;
+    }
+  }
 
   .img-container {
-    height: 40vw;
-    overflow: hidden;
+    height: 25vw;
     display: flex;
     flex-direction: row;
     width: 80%;
     margin: auto;
+    justify-content: center;
   }
 
   img {
-    margin: auto;
+    border: solid black 2px;
+    border-radius: 2%;
+    background-color: white;
+    margin: auto 10%;
+    padding: 3%;
     width: auto;
-    height: 25vw;
-    padding: 2%;
+    height: 20vw;
   }
 `;
 
@@ -182,6 +208,8 @@ export const ContactForm = styled.form`
   border-radius: 1%;
   height: auto;
   font-size: 2vw;
+  background-color: black;
+  color: #fce76f;
 
   .input-field {
     display: flex;
@@ -202,19 +230,24 @@ export const ContactForm = styled.form`
 
   /* Style the submit button with a specific background color etc */
   input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
+    background-color: #fce76f;
+    color: black;
+    font-size: 1vw;
     padding: 2% 5%;
     border: none;
-    border-radius: 1%;
+    border-radius: 5%;
     margin: 5%;
     margin-top: 0%;
     cursor: pointer;
+    transition: 0.3s;
+    border: solid black 1px;
   }
 
   /* When moving the mouse over the submit button, add a darker green color */
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: black;
+    color: #fce76f;
+    border: solid 1px #fce76f;
   }
 
   /* Add a background color and some padding around the form */

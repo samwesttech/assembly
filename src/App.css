@@ -6,6 +6,10 @@
 body {
   padding: 0;
 }
+a,
+input,
+label,
+textarea,
 h1,
 h2,
 h3,
@@ -23,6 +27,8 @@ p {
   display: flex;
   flex-direction: row;
   height: auto;
+  margin: 5%;
+  margin-top: 0%;
 }
 .bedroom-text {
   width: 50%;
@@ -32,6 +38,14 @@ p {
 
 .bedroom-carousel {
   width: 50%;
-  height: 40vw;
+  height: 60%;
   margin: auto 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .bedroom {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
 }
