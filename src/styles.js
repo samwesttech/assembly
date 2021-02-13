@@ -106,6 +106,16 @@ export const LuxuriesStyled = styled.div`
       margin: 5%;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    .Luxarys {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
 `;
 
 export const FloorPlanStyled = styled.div`
@@ -124,6 +134,15 @@ export const FloorPlanStyled = styled.div`
     margin-top: 1%;
     text-align: left;
   }
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    img {
+      margin: auto;
+    }
+  }
 `;
 export const FooterImageStyled = styled.img`
   height: 25vw;
@@ -136,6 +155,7 @@ export const LocalAreaStyled = styled.div`
   margin: auto;
   padding: 5%;
   padding-top: 1%;
+  height: auto;
 
   .text-container {
     width: 50%;
@@ -149,7 +169,7 @@ export const LocalAreaStyled = styled.div`
   }
 
   .img-container {
-    height: 25vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -165,6 +185,19 @@ export const LocalAreaStyled = styled.div`
     padding: 3%;
     width: auto;
     height: 20vw;
+  }
+
+  @media screen and (max-width: 800px) {
+    .img-container {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    img {
+      margin: 5% auto;
+    }
   }
 `;
 
